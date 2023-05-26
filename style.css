@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: RGBA(128, 128, 128, 0.5);
+}
+
+body {
+    color: #fff;
+    background: #000;
+}
+
+.remover {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+}
+
+main p {
+    text-align: center;
+}
+
+nav span {
+    width: 40%;
+    font-weight: bolder;
+}
+
+header ul {
+    width: 50%;
+}
+
+header li {
+    margin-right: 2%;
+}
+
+header .h3 {
+    margin-left: 1%;
+}
+
+header a.btn-dark, main a.btn-dark{
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+header a.btn-dark:hover, main a.btn-dark:hover {
+    background:#fff;
+    color: #000;
+}
+
+/* fim do cabeçalho */
+
+/* seção 1 */
+
+#secao1 .card-img-overlay{
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(rgba(14, 14, 14, 0.9),rgba(0, 0, 0, 1));
+    color: #fff;
+}
+
+#secao1 .card-body {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 55vw;
+    padding: 0;
+    text-align: center;
+}
+
+#secao1 .card-body h1 {
+    font-size: 11vw;
+}
+
+#secao1 .card-body h2 {
+    font-size: 6vw;
+}
+
+#secao1 .card-img {
+    height: 112vw;
+}
+
+#secao1 .card-text {
+    margin: 1.5% auto; 
+    font-size: 2.7vw;
+}
+
+#baixo {
+    margin-top: 5%;
+}
+
+#baixo a {
+    width: 95%;
+    font-weight: 750;
+}
+
+#secao1 .card-title {
+    font-weight: 700;
+}
+
+/* fim da seção 1 */
+
+section {
+    border-bottom:2px solid grey ;
+    padding-bottom: 5%; 
+}
+
+.container {
+    width: 90%; 
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 5%;
+}
+
+.parte1 {
+    width: 100%;
+}
+
+.parte1 img, .parte2 img {
+    border-radius: 3vw;
+    text-align: center;
+}
+
+.parte2 {
+    display: 100%;
+}
+
+.parte2 p{
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 1%;
+}
+
+/* fim seção 2 */
+
+/* inicio da seção 3 */
+#secao3 .parte1 {
+    order: -1;
+}
+
+#secao3 p{
+    padding-bottom: 5%;
+}
+
+/* fim da seção 3 */
+
+/* inicio da seção 4 */
+
+#secao4 img {
+    width: 100%;
+    margin-top: 5%;
+}
+
+#secao5 img{
+    width: 90%;
+    margin-left: 5%;
+}
+
+#secao5 .parte1 {
+    order: -1;
+}
+
+#secao5 p {
+    margin-bottom: 5%;
+}
+
+/* fim do topo */
+
+footer .row {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer #parte1 a{
+    color: #ffffff;
+}
+
+footer #parte1 a:hover{
+    color: #17a2b8;
+}
+
+footer #parte1, #parte2 {
+    margin-bottom: 5%;
+    margin-top: 1vw;
+}
+
+footer #parte2 a {
+    margin: 1.5vw;
+}
+
+@media (min-width: 1000px) {
+
+    .desktop1 {
+        text-align: left;
+        width: 90%;
+        padding-top: 21%; 
+        margin: 0 auto;
+        position: relative;
+        bottom:10vw;
+    }
+
+    #secao1 .card-img {
+        height: 55vw;
+    }
+
+    #secao1 .card-body {
+        margin-top: 17vw;
+    }
+
+    #secao1 .card-body h1 {
+        font-size: 6vw;
+    }
+    
+    #secao1 .card-body h2 {
+        font-size: 3vw;
+    }
+      
+    #secao1 .card-text {
+        font-size: 1.2vw;
+        font-weight: 700;
+    }
+
+    #baixo a {
+        width: 30%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom:0;
+    }
+
+    .parte1, .parte2 {
+        width: 50%;
+    }
+
+    .parte2 p{
+        margin-top: 25%;
+    }
+
+    #secao3 .parte1 {
+        order: 0;
+    }
+
+    #secao3 p{
+       margin-top: 20%;
+    }
+
+    #secao4 img {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    #secao4 p {
+        margin-top: 20%;
+    }
+
+    #secao5 .parte1 {
+        order: 0;
+    }
+
+    #secao5 p {
+        margin-top: 15%;
+    }
+
+    footer #parte1, #parte2 {
+        margin: 1% 0;
+    }
+
+}
+
+@media (min-width:1000px) and (max-width: 1300px) {
+    .parte2 p{
+        margin-top: 12%;
+    }
+
+    #secao1 .card-img {
+        height: 50vw;
+    }
+}
