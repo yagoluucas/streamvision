@@ -58,10 +58,15 @@ header a.btn-dark, main a.btn-dark{
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: 0.3s;
+
 }
 
 header a.btn-dark:hover, main a.btn-dark:hover {
+    background:#fff;
+    color: #000;
+}
+
+header a.btn-dark:hover, main a.btn-dark:active {
     background:#fff;
     color: #000;
 }
@@ -94,7 +99,7 @@ header a.btn-dark:hover, main a.btn-dark:hover {
 }
 
 #secao1 .card-img {
-    height: 112vw;
+    height: 140vw;
 }
 
 #secao1 .card-text {
@@ -183,6 +188,14 @@ section {
 
 /* fim do topo */
 
+#desktop {
+    display: none;
+}
+
+#mobile {
+    display: block;
+}
+
 footer .row {
     margin: 0 auto;
     text-align: center;
@@ -193,7 +206,12 @@ footer #parte1 a{
 }
 
 footer #parte1 a:hover{
+    color: #17a2b8;  
+}
+
+footer #parte1 a:active{
     color: #17a2b8;
+    transition: 0s;
 }
 
 footer #parte1, #parte2 {
@@ -236,6 +254,10 @@ footer #parte2 a {
         font-size: 1.2vw;
         font-weight: 700;
     }
+
+    header a.btn-dark, main a.btn-dark{
+        transition: 0.3s;
+      }
 
     #baixo a {
         width: 30%;
@@ -282,6 +304,14 @@ footer #parte2 a {
 
     footer #parte1, #parte2 {
         margin: 1% 0;
+    }
+
+    #desktop {
+        display: block;
+    }
+    
+    #mobile {
+        display: none;
     }
 
 }
